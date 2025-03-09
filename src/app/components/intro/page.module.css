@@ -1,0 +1,38 @@
+.introContainer {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  overflow: hidden;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.introImage {
+  position: absolute;
+  top: 50%; 
+  left: 45%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.introImage.visible {
+  opacity: 1;
+}
+
+.fadeOut {
+  opacity: 0;
+} 

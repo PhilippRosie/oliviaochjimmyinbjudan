@@ -1,0 +1,96 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 220px; /* För att kompensera för header-bredden */
+  position: relative;
+}
+
+.borderTop {
+  position: fixed;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.borderTop img {
+  object-fit: contain !important;
+  object-position: left top !important;
+}
+
+.borderBottom {
+  position: fixed;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  pointer-events: none;
+  z-index: 22;
+}
+
+.borderBottom img {
+  object-fit: contain !important;
+  object-position: left bottom !important;
+}
+
+.homeMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 21;
+}
+
+.homeTitle {
+  font-size: 65px;
+  text-align: center;
+}
+
+.homeSubtitle {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.homeSubtitle1 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.homeContentTitle {
+  font-size: 40px;
+  text-align: center;
+}
+
+.homeContentText {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+.osaReminder {
+  z-index: 20;
+  text-align: center;
+}
+
