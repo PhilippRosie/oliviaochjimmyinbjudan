@@ -1,0 +1,72 @@
+.tackOsaPage {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 220px;
+    position: relative;
+  }
+  
+  .borderTop {
+    position: fixed;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+    z-index: 22;
+  }
+  
+  .borderTop img {
+    object-fit: contain !important;
+    object-position: left top !important;
+  }
+  
+  .borderBottom {
+    position: fixed;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    pointer-events: none;
+    z-index: 22;
+  }
+  
+  .borderBottom img {
+    object-fit: contain !important;
+    object-position: left bottom !important;
+  }
+  
+  .tackOsaMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 64px 32px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 21;
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+
+  .tackOsaTitle {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  .tackOsaSubtitle {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 200;
+  }
+
+  .tackOsaSubtitle1 {
+    font-size: 55px;
+    text-align: center;
+    font-weight: 200;
+  }
