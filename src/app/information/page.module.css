@@ -107,3 +107,60 @@
     width: 80%;
     height: auto;
   }
+  @media (max-width: 768px) {
+    .informationPage {
+      padding-right: 0;
+    }
+
+    .informationMain {
+      width: 90%;
+      padding: 2rem 1rem;
+      margin-top: 50px;
+      margin-bottom: 150px;
+    }
+
+    .informationTitle {
+      font-size: 45px;
+    }
+
+    .informationSubtitle {
+      font-size: 17px;
+    }
+
+    .informationSubtitle1 {
+      font-size: 16px;
+    }
+
+    .informationContent {
+      width: 90%;
+      margin-top: 1.5rem;
+    }
+
+    .informationSection {
+      margin-bottom: 1.5rem;
+    }
+
+    .informationSection1 {
+      font-size: 16px;
+      margin-top: 0.8rem;
+    }
+
+    .infoTextImportant {
+      font-size: 16px;
+    }
+
+    .informationImage {
+      width: 120%;
+    }
+
+    .borderTop {
+      height: 150px;
+      top: -10px;
+    }
+
+    .borderBottom {
+      height: 150px;
+      bottom: 90px;
+    }
+  }
+  

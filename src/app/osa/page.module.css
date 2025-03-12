@@ -230,20 +230,115 @@
 }
 
 @media (max-width: 768px) {
-    .nameSection {
-        flex-direction: column;
-    }
-    
-    .ampersand {
-        margin: 16px 0;
-    }
-    
-    .radioGroup {
-        flex-direction: column;
-        gap: 16px;
-    }
-    .songInputSection {
-        flex-direction: column;
-        gap: 16px;
-    }
+  .osaPage {
+    padding-right: 0;
+  }
+
+  .osaMain {
+    width: 90%;
+    padding: 32px 16px;
+    margin-top: 50px;
+    margin-bottom: 160px;
+  }
+
+  .osaTitle {
+    font-size: 45px;
+  }
+
+  .osaSubtitle {
+    font-size: 17px;
+  }
+
+  .osaSubtitle1 {
+    font-size: 16px;
+  }
+
+  .osaContent {
+    width: 90%;
+    margin-top: 24px;
+  }
+
+  .osaSectionTitle {
+    font-size: 26px;
+  }
+
+  .osaSectionForm {
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .osaFormTitle {
+    font-size: 38px;
+  }
+
+  .osaFormSubtitle {
+    font-size: 20px;
+  }
+
+  .osaInfo {
+    font-size: 16px;
+  }
+
+  .nameSection {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .inputGroup {
+    width: 100%;
+  }
+
+  .inputGroup input {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .ampersand {
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  .radioGroup {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .submitButton {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 18px;
+  }
+
+  .songForm {
+    padding-top: 48px;
+    gap: 24px;
+  }
+
+  .songFormTitle {
+    font-size: 38px;
+  }
+
+  .songFormSubtitle {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+
+  .songInputSection {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .borderTop {
+    height: 150px;
+    top: -10px;
+  }
+
+  .borderBottom {
+    height: 150px;
+    bottom: 90px;
+  }
 }
+
+
