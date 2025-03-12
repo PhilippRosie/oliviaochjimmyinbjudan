@@ -6,6 +6,7 @@ import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
 import { useState } from 'react';
+import osaline from '../assets/images/osa/osaline.png';
 
 export default function Osa() {
   const [formData, setFormData] = useState({
@@ -118,6 +119,10 @@ export default function Osa() {
             Har du en allergi eller matpreferens som du inte anmäler, så är 0418-70135 numret till närmsta pizzeria.<br/>
             Dvs. Ej föranmäld specialkost kommer <span className={styles.underline}>INTE</span> att kunna lösas på plats.
           </p>
+          <div className={styles.osalineContainer}>
+            <Image className={styles.osaline} src={osaline} alt="Line" width={150} height={100} />
+          </div>
+          
 
           <div className={styles.transportSection}>
             <p className={`${styles.transportInfo} ${bitter.className}`}>

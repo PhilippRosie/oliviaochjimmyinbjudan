@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Bitter, Fredericka_the_Great } from "next/font/google";
-import Header from './components/header/Header';
+import Header from "./components/header/Header";
 
 export const bitter = Bitter({
   subsets: ['latin'],
