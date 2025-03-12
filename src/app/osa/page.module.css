@@ -168,6 +168,17 @@
     line-height: 1.5;
   }
 
+  .osalineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .osaline {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
   .underline {
     text-decoration: underline;
   }
