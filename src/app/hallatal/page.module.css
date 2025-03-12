@@ -124,6 +124,71 @@
     font-weight: 400;
   }
 
+  @media (max-width: 768px) {
+    .hållaTalPage {
+      padding-right: 0;
+    }
 
+    .hållaTalMain {
+      width: 90%;
+      padding: 2rem 1rem;
+      margin-top: 50px;
+      margin-bottom: 180px;
+    }
+
+    .hållaTalTitle {
+      font-size: 45px;
+    }
+
+    .hållaTalTitle1 {
+      font-size: 26px;
+      margin-bottom: 0.8rem;
+    }
+
+    .hållaTalSubtitle {
+      font-size: 17px;
+    }
+
+    .hållaTalSubtitle1 {
+      font-size: 16px;
+    }
+
+    .hållaTalContent {
+      width: 90%;
+      margin-top: 1.5rem;
+    }
+
+    .hållaTalSection {
+      margin-bottom: 1.5rem;
+    }
+
+    .hållaTalSectionText {
+      font-size: 16px;
+    }
+
+    .hållaTalSectionText1 {
+      font-size: 18px;
+      margin-top: 0.8rem;
+    }
+
+    .hållaTalSectionText2 {
+      font-size: 32px;
+      margin-top: 0.8rem;
+    }
+
+    .hållaTalSectionText3 {
+      font-size: 20px;
+    }
+
+    .borderTop {
+      height: 150px;
+      top: -10px;
+    }
+
+    .borderBottom {
+      height: 150px;
+      bottom: 90px;
+    }
+  }
 
 

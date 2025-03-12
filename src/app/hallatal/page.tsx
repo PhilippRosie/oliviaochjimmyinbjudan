@@ -27,13 +27,18 @@ export default function HallaTal() {
                 <section className={styles.hållaTalSection}>
                     <p className={`${styles.hållaTalSectionText} ${bitter.className}`}>
                         Kontakta vår Toastmadame:<br />
-                        <p className={`${styles.hållaTalSectionText1} ${bitter.className}`}>Anna Neidenström</p>
-                        <p className={`${styles.hållaTalSectionText2} ${fredericka.className}`}>     
-                        <a href="tel:+46707506142">0707-506142</a>
-                        </p>
-                        <p className={`${styles.hållaTalSectionText3} ${fredericka.className}`}>
-                        <a href="mailto:toastmadame250906@hotmail.com">Toastmadame250906@hotmail.com</a>
-                        </p>
+                        <div className={styles.hållaTalSection}>
+                            <br />
+                            <p className={styles.hållaTalSectionText1}>
+                                Anna Neidenström
+                            </p>
+                            <p className={`${styles.hållaTalSectionText2} ${fredericka.className}`}>     
+                                <a href="tel:+46707506142">0707-506142</a>
+                            </p>
+                            <p className={`${styles.hållaTalSectionText3} ${fredericka.className}`}>
+                                <a href="mailto:toastmadame250906@hotmail.com">Toastmadame250906@hotmail.com</a>
+                            </p>
+                        </div>
                     </p>
                 </section>
                 <section className={styles.hållaTalSection}>

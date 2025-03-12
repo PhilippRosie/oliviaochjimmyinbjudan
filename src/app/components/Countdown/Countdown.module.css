@@ -25,3 +25,17 @@
   margin-top: 0.5rem;
   font-weight: 200;
 } 
+@media (max-width: 768px) {
+  .countdown {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .timeUnit {
+    min-width: 50px;
+  }
+  .number {
+    font-size: 1.5rem;
+  }
+}

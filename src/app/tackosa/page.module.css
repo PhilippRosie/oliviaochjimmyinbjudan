@@ -70,3 +70,39 @@
     text-align: center;
     font-weight: 200;
   }
+
+@media (max-width: 768px) {
+  .tackOsaPage {
+    padding-right: 0;
+  }
+
+  .tackOsaMain {
+    width: 90%;
+    padding: 32px 16px;
+    margin-top: 50px;
+    margin-bottom: 220px;
+  }
+
+  .tackOsaTitle {
+    font-size: 45px;
+  }
+
+  .tackOsaSubtitle {
+    font-size: 17px;
+  }
+
+  .tackOsaSubtitle1 {
+    font-size: 45px;
+  }
+
+  .borderTop {
+    height: 150px;
+    top: -10px;
+  }
+
+  .borderBottom {
+    height: 150px;
+    bottom: 90px;
+  }
+}
+  
