@@ -16,7 +16,7 @@ export default function Template({children} : {children: React.ReactNode}) {
             return;
         }
         setPreviousChildren(children);
-    }, [pathname]);
+    }, [pathname, children]);
 
     return (
         <div style={{ position: 'relative', minHeight: '100vh' }}>
