@@ -23,12 +23,6 @@ export default function Osa() {
     artist: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Här kan du lägga till logik för att hantera formuläret
-    console.log(formData);
-  };
-
   return (
     <div className={styles.osaPage}>
       <div className={styles.borderTop}>
