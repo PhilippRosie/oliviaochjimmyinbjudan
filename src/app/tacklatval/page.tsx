@@ -20,7 +20,7 @@ export default function Tacklatval() {
       <main className={styles.tackLatvalMain}>
         <h1 className={`${styles.tackLatvalTitle} ${fredericka.className}`}>YEEEEAH! 🎵</h1>
         <p className={`${styles.tackLatvalSubtitle} ${bitter.className}`}>Din låt är nu med i vår episka spellista!<br />Tack för att du bidrar till att göra dansgolvet HELT BANAZA!</p>
-        <p className={`${styles.tackLatvalSubtitle1} ${fredericka.className}`}>🕺Let's Dance!💃</p>
+        <p className={`${styles.tackLatvalSubtitle1} ${fredericka.className}`}>🕺Let&apos;s Dance!💃</p>
       </main>
     </div>
   );

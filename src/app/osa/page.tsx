@@ -126,7 +126,7 @@ export default function Osa() {
 
           <div className={styles.transportSection}>
             <p className={`${styles.transportInfo} ${bitter.className}`}>
-              Då vårt önskemål är att så många som möjligt "slipper köra".<br/>
+              Då vårt önskemål är att så många som möjligt &quot;slipper köra&quot;.<br/>
               Ordnar vi med transport till och från centrala Helsingborg mot en kostnad på 100 kr/person.<br/>
               Mer info kommer senare för er som önskar.
             </p>
