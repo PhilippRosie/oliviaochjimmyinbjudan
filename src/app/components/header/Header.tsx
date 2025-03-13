@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
 import leafBorder from '../../assets/images/header/header-leaf-border.png';
-import {fredericka } from '../../layout';
+import { fredericka } from '../../fonts';
 
 // Importera ikonerna
 import inbjudanIcon from '../../assets/images/header/inbjudan-icon.jpg';

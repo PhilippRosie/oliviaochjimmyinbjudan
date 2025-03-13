@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './page.module.css';
-import { fredericka, bitter } from '../layout';
+import { fredericka, bitter } from '../fonts';
 import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
