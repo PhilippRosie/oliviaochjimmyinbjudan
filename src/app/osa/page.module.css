@@ -347,6 +347,9 @@
   }
 }
 @media (max-width: 385px) {
+  .osaTitle {
+    font-size: 35px;
+  }
   .borderBottom {
     bottom: 60px;
   }

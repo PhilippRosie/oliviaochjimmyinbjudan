@@ -137,6 +137,10 @@
 }
 
 @media (max-width: 385px) {
+  .homeTitle {
+    font-size: 35px;
+  }
+  
   .homeMain {
     margin-top: 50px;
   }

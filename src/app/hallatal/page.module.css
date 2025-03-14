@@ -191,6 +191,9 @@
     }
   }
   @media (max-width: 385px) {
+    .hållaTalTitle {
+      font-size: 35px;
+    }
     .borderBottom {
       bottom: 60px;
     }

@@ -170,6 +170,9 @@
     }
   }
   @media (max-width: 385px) {
+    .informationTitle {
+      font-size: 35px;
+    }
     .informationMain {
       margin-top: 50px;
     }

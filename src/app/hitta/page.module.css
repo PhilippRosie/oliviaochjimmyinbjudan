@@ -149,6 +149,9 @@
 }
 
 @media (max-width: 385px) {
+  .hittaTitle {
+    font-size: 35px;
+  }
   .borderBottom {
     bottom: 60px;
   }
