@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 import { fredericka, bitter } from './fonts';
 import Image from 'next/image';
-import Link from 'next/link';
 import borderTop from './assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from './assets/images/inbjudan/header-leaf-border-bottom.png';
 import Countdown from './components/Countdown/Countdown';
@@ -50,7 +49,7 @@ om exakt :
         <div className={`${styles.osaReminder} ${bitter.className}`}>
           <p className={`${styles.osaReminderText} ${fredericka.className}`}>Kommer ni?</p>
           <p className={`${styles.osaReminderText} ${fredericka.className}`}>
-            Glöm inte att <Link href="/osa" className={styles.underline}>OSA</Link>!
+            Glöm inte att <a href="/osa" className={styles.underline}>OSA</a>!
           </p>
         </div>
       </main>

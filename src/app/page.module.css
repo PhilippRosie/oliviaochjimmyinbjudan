@@ -94,6 +94,10 @@
   text-align: center;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 @media (max-width: 450px) {
   .home {
     padding-right: 0; 
