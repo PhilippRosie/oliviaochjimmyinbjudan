@@ -5,7 +5,7 @@ import { fredericka, bitter } from '../fonts';
 import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
 
 const center = {
   lat: 55.97507,
@@ -50,7 +50,7 @@ export default function Hitta() {
                 zoom={14}
               >
                 {locations.map((location, index) => (
-                  <Marker
+                  <MarkerF
                     key={index}
                     position={location.position}
                     title={location.name}
