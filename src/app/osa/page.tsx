@@ -40,7 +40,7 @@ export default function Osa() {
         <div className={styles.osaContent}>
         <form 
           className={styles.osaSectionForm} 
-          action="https://formsubmit.co/philippderosie@gmail.com" 
+          action="https://formsubmit.co/sanquist250906@gmail.com" 
           method="POST"
         >
           {/* Lägg till dessa dolda input-fält för FormSubmit.co konfiguration */}
@@ -167,7 +167,7 @@ export default function Osa() {
 
         <form 
           className={styles.songForm} 
-          action="https://formsubmit.co/philippderosie@gmail.com" 
+          action="https://formsubmit.co/sanquist250906@gmail.com" 
           method="POST"
         >
           {/* Lägg till dessa dolda input-fält för FormSubmit.co konfiguration */}
