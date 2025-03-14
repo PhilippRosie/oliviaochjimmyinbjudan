@@ -124,7 +124,7 @@
     font-weight: 400;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 450px) {
     .hållaTalPage {
       padding-right: 0;
     }
@@ -189,6 +189,12 @@
       height: 150px;
       bottom: 90px;
     }
+  }
+  @media (max-width: 385px) {
+    .borderBottom {
+      bottom: 60px;
+    }
+    
   }
 
 

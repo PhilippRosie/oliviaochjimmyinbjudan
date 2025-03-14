@@ -22,7 +22,7 @@
 .introImage {
   position: absolute;
   top: 50%; 
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
@@ -37,12 +37,35 @@
 .fadeOut {
   opacity: 0;
 } 
-@media (max-width: 768px) {
+
+@media (max-width: 450px) {
+  .introContainer {
+    height: 100vh;
+  }
+  .imageContainer {
+    width: 65%;
+    height: 65%;
+  }
   .introImage {
-    max-width: 80%;
+    max-width: 65%;
+    width: 65%;
+    height: auto;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 385px) {
+  .imageContainer {
+    width: 45%;
+    height: 45%;
+  }
+  .introImage {
+    max-width: 45%;
+    width: 45%;
+    height: auto;
+    top: 30%;
   }
 }
