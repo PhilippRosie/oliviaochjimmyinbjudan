@@ -94,13 +94,14 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .home {
     padding-right: 0; 
   }
   .homeMain {
     width: 90%;
     margin-bottom: 150px;
+    margin-top: -10px;
   }
   .homeTitle {
     font-size: 45px;
@@ -129,4 +130,14 @@
   .borderBottom {
     bottom: 90px;
   }
+}
+
+@media (max-width: 385px) {
+  .homeMain {
+    margin-top: 50px;
+  }
+  .borderBottom {
+    bottom: 60px;
+  }
+  
 }

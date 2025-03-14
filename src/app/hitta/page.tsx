@@ -1,29 +1,24 @@
-'use client';
-
 import styles from './page.module.css';
-import { fredericka, bitter } from '../layout';
+import { fredericka, bitter } from '../fonts';
 import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import type { LatLngTuple } from 'leaflet';
+import MapWrapper from '../components/maps/MapWrapper';
 
-const center = {
-  lat: 55.97507,
-  lng: 12.82170
-};
-
+const center: LatLngTuple = [55.9659, 12.8393];
 const locations = [
   {
     name: "Kvistofta Kyrka",
-    position: { lat: 55.9692, lng: 12.829 }
+    position: [55.9692, 12.829] as LatLngTuple,
+    address: "Rååvägen 298, 257 30 Rydebäck"
   },
   {
     name: "Grönadal",
-    position: { lat: 55.9626787, lng: 12.8496768 }
+    position: [55.9626787, 12.8496768] as LatLngTuple,
+    address: "Grönadalsgården 1, 257 30 Rydebäck"
   }
 ];
-
-const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
 
 export default function Hitta() {
   return (
@@ -43,21 +38,7 @@ export default function Hitta() {
         <div className={styles.hittaContent}>
           <h2 className={`${styles.hittaContentTitle} ${fredericka.className}`}>Hitta Rätt</h2>
           <div className={styles.hittaContentMap}>
-            <LoadScript googleMapsApiKey={googleMapsApiKey}>
-              <GoogleMap
-                mapContainerClassName={styles.googleMap}
-                center={center}
-                zoom={14}
-              >
-                {locations.map((location, index) => (
-                  <Marker
-                    key={index}
-                    position={location.position}
-                    title={location.name}
-                  />
-                ))}
-              </GoogleMap>
-            </LoadScript>
+            <MapWrapper center={center} locations={locations} />
           </div>
         </div>
       </main>

@@ -71,7 +71,7 @@
     font-weight: 200;
   }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .tackOsaPage {
     padding-right: 0;
   }
@@ -104,5 +104,23 @@
     height: 150px;
     bottom: 90px;
   }
+}
+@media (max-width: 385px) {
+  .borderBottom {
+    bottom: 50px;
+  }
+
+  .tackOsaTitle {
+    font-size: 35px;
+  }
+
+  .tackOsaSubtitle {
+    font-size: 15px;
+  }
+
+  .tackOsaSubtitle1 {
+    font-size: 35px;
+  }
+  
 }
   

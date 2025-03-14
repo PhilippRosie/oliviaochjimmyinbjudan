@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './page.module.css';
-import { fredericka, bitter } from '../layout';
+import { fredericka, bitter } from '../fonts';
 import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
@@ -23,12 +23,6 @@ export default function Osa() {
     artist: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Här kan du lägga till logik för att hantera formuläret
-    console.log(formData);
-  };
-
   return (
     <div className={styles.osaPage}>
       <div className={styles.borderTop}>
@@ -46,7 +40,7 @@ export default function Osa() {
         <div className={styles.osaContent}>
         <form 
           className={styles.osaSectionForm} 
-          action="https://formsubmit.co/philippderosie@gmail.com" 
+          action="https://formsubmit.co/sanquist250906@gmail.com" 
           method="POST"
         >
           {/* Lägg till dessa dolda input-fält för FormSubmit.co konfiguration */}
@@ -126,7 +120,7 @@ export default function Osa() {
 
           <div className={styles.transportSection}>
             <p className={`${styles.transportInfo} ${bitter.className}`}>
-              Då vårt önskemål är att så många som möjligt "slipper köra".<br/>
+              Då vårt önskemål är att så många som möjligt &quot;slipper köra&quot;.<br/>
               Ordnar vi med transport till och från centrala Helsingborg mot en kostnad på 100 kr/person.<br/>
               Mer info kommer senare för er som önskar.
             </p>
@@ -173,7 +167,7 @@ export default function Osa() {
 
         <form 
           className={styles.songForm} 
-          action="https://formsubmit.co/philippderosie@gmail.com" 
+          action="https://formsubmit.co/sanquist250906@gmail.com" 
           method="POST"
         >
           {/* Lägg till dessa dolda input-fält för FormSubmit.co konfiguration */}

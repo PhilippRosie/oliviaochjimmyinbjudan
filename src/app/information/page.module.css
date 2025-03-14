@@ -107,7 +107,7 @@
     width: 80%;
     height: auto;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 450px) {
     .informationPage {
       padding-right: 0;
     }
@@ -162,5 +162,14 @@
       height: 150px;
       bottom: 90px;
     }
+  }
+  @media (max-width: 385px) {
+    .informationMain {
+      margin-top: 50px;
+    }
+    .borderBottom {
+      bottom: 60px;
+    }
+    
   }
   

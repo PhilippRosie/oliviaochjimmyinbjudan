@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import styles from './Countdown.module.css';
-import { bitter } from '../../layout';
+import { bitter } from '../../fonts';
 
 export default function Countdown() {
   const [mounted, setMounted] = useState(false);

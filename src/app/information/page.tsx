@@ -1,5 +1,5 @@
 import styles from './page.module.css';
-import { fredericka, bitter } from '../layout';
+import { fredericka, bitter } from '../fonts';
 import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
@@ -46,7 +46,7 @@ Därefter rör vi oss direkt 1600 meter österut till Grönadal för mingel föl
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
             <b>Klädkod:</b> Viktigast för oss är att folk är bekväma.
 
-Kom i något du känner dig "uppklädd" & fin i! (Vi undanber dock blåjeans, mjukisbyxor och Klubbmärken)
+Kom i något du känner dig &quot;uppklädd&quot; & fin i! (Vi undanber dock blåjeans, mjukisbyxor och Klubbmärken)
           </p>
         </section>
         <section className={styles.informationSection1}>
@@ -58,7 +58,7 @@ Så kommer vi att ordna skjuts från centrala Helsingborg som tar er till kyrkan
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
-            <b>Musik:</b> DJ kommer förgylla festen, men kasta gärna in ett par önskelåtar när ni OSA'ar, så har han ledtrådar på vad ni vill höra.
+            <b>Musik:</b> DJ kommer förgylla festen, men kasta gärna in ett par önskelåtar när ni OSA&apos;ar, så har han ledtrådar på vad ni vill höra.
           </p>
         </section>
         <section className={styles.informationSection1}>

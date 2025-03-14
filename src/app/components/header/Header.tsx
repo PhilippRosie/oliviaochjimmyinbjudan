@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.css';
 import leafBorder from '../../assets/images/header/header-leaf-border.png';
-import {fredericka } from '../../layout';
+import { fredericka } from '../../fonts';
 
 // Importera ikonerna
-import inbjudanIcon from '../../assets/images/header/inbjudan-icon.jpg';
-import infoIcon from '../../assets/images/header/info-icon.jpg';
-import talIcon from '../../assets/images/header/tal-icon.jpg';
-import osaIcon from '../../assets/images/header/osa-icon.jpg';
-import hittaIcon from '../../assets/images/header/hitta-icon.jpg';
+import inbjudanIcon from '../../assets/images/header/inbjudan-icon.png';
+import infoIcon from '../../assets/images/header/info-icon.png';
+import talIcon from '../../assets/images/header/tal-icon.png';
+import osaIcon from '../../assets/images/header/osa-icon.png';
+import hittaIcon from '../../assets/images/header/hitta-icon.png';
 
 export default function Header() {
   

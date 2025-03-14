@@ -71,7 +71,7 @@
     font-weight: 200;
   }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .tackLatvalPage {
     padding-right: 0;
   }
@@ -103,6 +103,23 @@
   .borderBottom {
     height: 150px;
     bottom: 90px;
+  }
+}
+@media (max-width: 385px) {
+  .borderBottom {
+    bottom: 50px;
+  }
+
+  .tackLatvalTitle {
+    font-size: 35px;
+  }
+
+  .tackLatvalSubtitle {
+    font-size: 15px;
+  }
+
+  .tackLatvalSubtitle1 {
+    font-size: 35px;
   }
 }
   
