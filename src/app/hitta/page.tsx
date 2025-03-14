@@ -11,12 +11,12 @@ const locations = [
   {
     name: "Kvistofta Kyrka",
     position: [55.9692, 12.829] as LatLngTuple,
-    address: "Rååvägen 298, 257 30 Rydebäck"
+    address: "Ryavägen 200, 260 30, Vallåkra"
   },
   {
     name: "Grönadal",
     position: [55.9626787, 12.8496768] as LatLngTuple,
-    address: "Grönadalsgården 1, 257 30 Rydebäck"
+    address: "Ryavägen 38, 253 41, Vallåkra"
   }
 ];
 

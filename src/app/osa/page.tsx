@@ -7,6 +7,8 @@ import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
 import { useState } from 'react';
 import osaline from '../assets/images/osa/osaline.png';
+import osaline1 from '../assets/images/osa/osaline-1.png';
+
 
 export default function Osa() {
   const [formData, setFormData] = useState({
@@ -51,7 +53,9 @@ export default function Osa() {
           <p className={`${styles.osaInfo} ${bitter.className}`}>
             (Vid ev. förhinder EFTER 31/7, ber vi er istället kontakta vår <a href="/hallatal" className={styles.underline}>Toastmadame</a>)
           </p>
-
+          <div className={styles.osalineContainer}>
+            <Image className={styles.osaline} src={ osaline1} alt="Line" width={150} height={100} />
+          </div>
           <div className={styles.nameSection}>
             <div className={styles.inputGroup}>
               <label className={bitter.className}>Namn *</label>
