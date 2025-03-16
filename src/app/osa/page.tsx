@@ -47,7 +47,7 @@ export default function Osa() {
         >
           {/* Lägg till dessa dolda input-fält för FormSubmit.co konfiguration */}
           <input type="hidden" name="_subject" value="Nytt OSA till bröllopet!" />
-          <input type="hidden" name="_next" value="https://dev.d3stwh6kg868s9.amplifyapp.com/tackosa" />
+          <input type="hidden" name="_next" value="https://www.sandquistoochj.se/tackosa" />
           <h1 className={`${styles.osaFormTitle} ${fredericka.className}`}>Fira med oss!</h1>
           <h2 className={`${styles.osaFormSubtitle} ${bitter.className}`}>OSA senast 31/7</h2>
           <p className={`${styles.osaInfo} ${bitter.className}`}>
@@ -176,7 +176,7 @@ export default function Osa() {
         >
           {/* Lägg till dessa dolda input-fält för FormSubmit.co konfiguration */}
           <input type="hidden" name="_subject" value="Ny önskelåt till bröllopet!" />
-          <input type="hidden" name="_next" value="https://dev.d3stwh6kg868s9.amplifyapp.com/tacklatval" />
+          <input type="hidden" name="_next" value="https://www.sandquistoochj.se/tacklatval" />
           <h2 className={`${styles.songFormTitle} ${fredericka.className}`}>
               Psst. Kasta in en önskelåt!
           </h2>
