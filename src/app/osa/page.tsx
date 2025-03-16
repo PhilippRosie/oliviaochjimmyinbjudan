@@ -7,6 +7,8 @@ import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
 import { useState } from 'react';
 import osaline from '../assets/images/osa/osaline.png';
+import osaline1 from '../assets/images/osa/osaline-1.png';
+
 
 export default function Osa() {
   const [formData, setFormData] = useState({
@@ -40,18 +42,20 @@ export default function Osa() {
         <div className={styles.osaContent}>
         <form 
           className={styles.osaSectionForm} 
-          action="https://formsubmit.co/sanquist250906@gmail.com" 
+          action="https://formsubmit.co/sandquist250906@gmail.com" 
           method="POST"
         >
           {/* Lägg till dessa dolda input-fält för FormSubmit.co konfiguration */}
           <input type="hidden" name="_subject" value="Nytt OSA till bröllopet!" />
-          <input type="hidden" name="_next" value="http://localhost:3000/tackosa" />
+          <input type="hidden" name="_next" value="https://dev.d3stwh6kg868s9.amplifyapp.com/tackosa" />
           <h1 className={`${styles.osaFormTitle} ${fredericka.className}`}>Fira med oss!</h1>
           <h2 className={`${styles.osaFormSubtitle} ${bitter.className}`}>OSA senast 31/7</h2>
           <p className={`${styles.osaInfo} ${bitter.className}`}>
             (Vid ev. förhinder EFTER 31/7, ber vi er istället kontakta vår <a href="/hallatal" className={styles.underline}>Toastmadame</a>)
           </p>
-
+          <div className={styles.osalineContainer}>
+            <Image className={styles.osaline} src={ osaline1} alt="Line" width={150} height={100} />
+          </div>
           <div className={styles.nameSection}>
             <div className={styles.inputGroup}>
               <label className={bitter.className}>Namn *</label>
@@ -167,12 +171,12 @@ export default function Osa() {
 
         <form 
           className={styles.songForm} 
-          action="https://formsubmit.co/sanquist250906@gmail.com" 
+          action="https://formsubmit.co/sandquist250906@gmail.com" 
           method="POST"
         >
           {/* Lägg till dessa dolda input-fält för FormSubmit.co konfiguration */}
           <input type="hidden" name="_subject" value="Ny önskelåt till bröllopet!" />
-          <input type="hidden" name="_next" value="http://localhost:3000/tacklatval" />
+          <input type="hidden" name="_next" value="https://dev.d3stwh6kg868s9.amplifyapp.com/tacklatval" />
           <h2 className={`${styles.songFormTitle} ${fredericka.className}`}>
               Psst. Kasta in en önskelåt!
           </h2>

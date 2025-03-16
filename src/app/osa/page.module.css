@@ -273,10 +273,16 @@
 
   .osaFormSubtitle {
     font-size: 20px;
+    font-weight: 400;
   }
 
   .osaInfo {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .osaInfo a {
+    font-size: 18px;
+    font-weight: 400;
   }
 
   .nameSection {
@@ -341,6 +347,9 @@
   }
 }
 @media (max-width: 385px) {
+  .osaTitle {
+    font-size: 35px;
+  }
   .borderBottom {
     bottom: 60px;
   }

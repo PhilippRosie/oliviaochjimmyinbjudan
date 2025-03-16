@@ -58,16 +58,16 @@ Så kommer vi att ordna skjuts från centrala Helsingborg som tar er till kyrkan
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
-            <b>Musik:</b> DJ kommer förgylla festen, men kasta gärna in ett par önskelåtar när ni OSA&apos;ar, så har han ledtrådar på vad ni vill höra.
+            <b>Musik:</b> DJ kommer förgylla festen, men kasta gärna in ett par önskelåtar när ni <a href="/osa" className={styles.underline}>OSA&apos;ar</a>, så har han ledtrådar på vad ni vill höra.
           </p>
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
-            <b>OSA</b> (senast 31/7): Använd formuläret på OSA-sidan för att meddela ifall ni kan komma eller ej.
+            <b>OSA</b> (senast 31/7): Använd formuläret på <a href="/osa" className={styles.underline}>OSA-sidan</a> för att meddela ifall ni kan komma eller ej.
 
 Där ber vi er även meddela Ev. Specialkost samt ifall ni vill ha hjälp med transport eller ej.​
 <br />
- <b className={styles.infoTextImportant}>(Vid ev. förhinder EFTER 31/7, ber vi er istället kontakta vår Toastmadame)</b>
+ <b className={styles.infoTextImportant}>(Vid ev. förhinder EFTER 31/7, ber vi er istället kontakta vår <a href="/hallatal" className={styles.underline}>Toastmadame</a>)</b>
           </p>
         </section>
         <section className={styles.informationSection1}>

@@ -1,13 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './page.module.css';
 import introImage from '../../assets/images/intro/intro-image.png';
 
 export default function IntroPage() {
-  const router = useRouter();
   const [imageLoaded, setImageLoaded] = useState(false);
   const [startFadeOut, setStartFadeOut] = useState(false);
 
@@ -21,12 +19,7 @@ export default function IntroPage() {
     setTimeout(() => {
       setStartFadeOut(true);
     }, 2500);
-
-    // Navigera till startsidan efter animationerna
-    setTimeout(() => {
-      router.push('/');
-    }, 3500);
-  }, [router]);
+  }, []);
 
   return (
     <div className={`${styles.introContainer} ${startFadeOut ? styles.fadeOut : ''}`}>
