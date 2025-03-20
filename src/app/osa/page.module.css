@@ -199,7 +199,17 @@
     background: #333;
   }
 
+  .errorMessage {
+    color: #e74c3c;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 14px;
+  }
 
+  .submitButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
 
 .songForm {
     padding-top: 64px;
