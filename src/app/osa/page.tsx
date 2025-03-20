@@ -59,7 +59,8 @@ export default function Osa() {
       } else {
         setOsaError('Något gick fel vid skickandet av formuläret. Försök igen.');
       }
-    } catch (err) {
+    } catch (error) {
+      console.error('OSA Error:', error);
       setOsaError('Ett fel uppstod. Kontrollera din internetanslutning och försök igen.');
     } finally {
       setOsaSubmitting(false);
@@ -88,7 +89,8 @@ export default function Osa() {
       } else {
         setSongError('Något gick fel vid skickandet av låtönskningen. Försök igen.');
       }
-    } catch (err) {
+    } catch (error) {
+      console.error('Song Error:', error);
       setSongError('Ett fel uppstod. Kontrollera din internetanslutning och försök igen.');
     } finally {
       setSongSubmitting(false);
