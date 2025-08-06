@@ -47,10 +47,13 @@ om exakt :
           <Countdown />
         </div>
         <div className={`${styles.osaReminder} ${bitter.className}`}>
-          <p className={`${styles.osaReminderText} ${fredericka.className}`}>Kommer ni?</p>
+          {/*<p className={`${styles.osaReminderText} ${fredericka.className}`}>Kommer ni?</p>
           <p className={`${styles.osaReminderText} ${fredericka.className}`}>
             Glöm inte att <a href="/osa" className={styles.underline}>OSA</a>!
-          </p>
+          </p>*/}
+          <a href="https://photos.app.goo.gl/49L7yjeQ8Myno1XQ9" target="_blank" rel="noopener noreferrer">
+            <button className={`${styles.osaReminderBtn} ${fredericka.className}`}>Se och dela med dig av bilder från dagen</button>
+          </a>
         </div>
       </main>
     </div>

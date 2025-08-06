@@ -39,7 +39,9 @@ Därefter rör vi oss direkt 1600 meter österut till Grönadal för mingel föl
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
-            <b>Presenter:</b> Önskar vi oss inga, däremot gärna ett bidrag till kommande resa.
+            <b>Presenter:</b> Önskar vi oss inga, däremot gärna ett bidrag till vår framtida bröllopsresa. <br /><br />
+            Vi vet inte riktigt vart vi ska än – men vi lovar att göra något minnesvärt (och kanske soligt) <br/><br/>
+            <a href="https://www.swish.nu/pay?receiver=0730626367&message=Tack%20så%20fruktansvärt%20mycket" target="_blank" rel="noopener noreferrer" className={`${fredericka.className} ${styles.swishBtn}`}>Swisha Här!</a><br/><br/>
           </p>
         </section>
         <section className={styles.informationSection1}>
@@ -51,30 +53,23 @@ Kom i något du känner dig &quot;uppklädd&quot; & fin i! (Vi undanber dock bl�
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
-            <b>Transport:</b> För den som önskar och vill slippa ta bilen.
-
-Så kommer vi att ordna skjuts från centrala Helsingborg som tar er till kyrkan. Från kyrkan till Grönadal. Sedan tillbaka till Helsingborg när festen är över. Detta till en kostnad på 100kr/person.
+            <b>Transport:</b> För er som önskat hjälp med transport finner ni info <a href="/hitta" className={styles.underline}>HÄR!</a>
           </p>
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
-            <b>Musik:</b> DJ kommer förgylla festen, men kasta gärna in ett par önskelåtar när ni <a href="/osa" className={styles.underline}>OSA&apos;ar</a>, så har han ledtrådar på vad ni vill höra.
+            <b>Musik:</b> DJ kommer förgylla festen, men kasta gärna in ett par önskelåtar här i <a href="/osa" className={styles.underline}>LÅTÖNSKINGAR</a>, så har han ledtrådar på vad ni vill höra.
           </p>
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
-            <b>OSA</b> (senast 31/7): Använd formuläret på <a href="/osa" className={styles.underline}>OSA-sidan</a> för att meddela ifall ni kan komma eller ej.
-
-Där ber vi er även meddela Ev. Specialkost samt ifall ni vill ha hjälp med transport eller ej.​
-<br />
+            <b>OSA:</b> 
  <b className={styles.infoTextImportant}>(Vid ev. förhinder EFTER 31/7, ber vi er istället kontakta vår <a href="/hallatal" className={styles.underline}>Toastmadame</a>)</b>
           </p>
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
-            <b>Boende:</b> För er som reser långt ifrån och vill boka hotell, rekommenderar vi The Vault (där vi själva kommer att bo). 
-
-(boka.thevaulthotel.se och skriv in rabattkoden K-Gränd för 20% rabatt.)
+            <b>Boende:</b> För er som önskat hjälp med transport finner ni info här. Och länk till den nya sidan
           </p>
         </section>
       </div>

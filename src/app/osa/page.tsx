@@ -112,7 +112,7 @@ export default function Osa() {
         <p className={`${styles.osaSubtitle1} ${bitter.className}`}>Middag & Fest på Grönadal</p>
 
         <div className={styles.osaContent}>
-          <form 
+          {/*<form 
             className={styles.osaSectionForm} 
             onSubmit={handleOsaSubmit}
           >
@@ -241,14 +241,14 @@ export default function Osa() {
             >
               {osaSubmitting ? 'Skickar...' : 'Skicka'}
             </button>
-          </form>
+          </form>*/}
 
           <form 
             className={styles.songForm} 
             onSubmit={handleSongSubmit}
           >
             <h2 className={`${styles.songFormTitle} ${fredericka.className}`}>
-              Psst. Kasta in en önskelåt!
+              Psst... <br/> Din önskelåt... <br/> Kasta in den!
             </h2>
             <p className={`${styles.songFormSubtitle} ${bitter.className}`}>
               Självfallet helt anonymt & obegränsat antal.
