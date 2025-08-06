@@ -3,6 +3,7 @@ import { fredericka, bitter } from '../fonts';
 import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
+import Ludwig from '../assets/images/map/ludwig.jpg';
 import type { LatLngTuple } from 'leaflet';
 import MapWrapper from '../components/maps/MapWrapper';
 
@@ -35,11 +36,38 @@ export default function Hitta() {
         <p className={`${styles.hittaSubtitle} ${bitter.className}`}>Lördag 6/9 2025 | Kvistofta k:a | Kl: 14:30</p>
         <p className={`${styles.hittaSubtitle1} ${bitter.className}`}>Middag & Fest på Grönadal</p>
 
-        <div className={styles.hittaContent}>
-          <h2 className={`${styles.hittaContentTitle} ${fredericka.className}`}>Hitta Rätt</h2>
+        <div className={styles.hittaContent}> 
+          <h2 className={`${styles.hittaContentTitle} ${fredericka.className}`}>Transport</h2>
+          <p className={`${styles.hittaContentText} ${bitter.className}`}>
+            Informationen här gäller er som önskat hjälp med transport: (har ni som inte önskat hjälp ändrat er? Hör av er snarast! Så går det att lösa)
+            <br/>
+            För enbart adresser! Kolla längst ner på sidan (länk?)
+            <br/>
+            <br/>
+<b>Klockan 13.30</b> är bussen på plats och senast <b>13.40</b> avgår den från <b>Stortorget</b> (Magnus Stenbock-statyn)
+<br/>
+<br/>
+För att alla ska komma med har vi <b>Ludwig</b> (Olivia’s bror) på plats för att vara er reseledare .
+          </p>
+          <Image src={Ludwig} alt="Ludwig" width={300} height={300} className={styles.hittaContentImage} />
+          <p className={`${styles.hittaContentText} ${bitter.className}`}>Blir ni sena/tidiga eller något annat sker som påverkar er möjlighet att resa med bussen, hör av er till honom :<br/><br/>
+            <a href="tel:+46706537344" className={`${fredericka.className} ${styles.callBtn}`}>070-653 73 44</a>
+          </p>
+<br/>
+<br/>
+<p className={`${styles.hittaContentText} ${bitter.className}`}>🚍 Ni anländer till Kvistofta kyrka ca 15 minuter innan vigseln startar, vilket innebär att det är av stor vikt att bussen avgår i tid. 
+<br/>
+<br/>
+Efter vigsel, kör bussen er vidare till Grönadal. 🥂 </p><br/>
+
+<p className={`${styles.hittaContentText} ${bitter.className}`}>ca.<b>02.30</b> avgår bussen från Grönadal och lämnar oss åter på Stortorget ca. <b>03.00</b>. </p><br/>
+
+<p className={`${styles.hittaContentText} ${bitter.className}`}>Swisha 100kr per näsa till:<br/><br/> <a href="https://www.swish.nu/pay?receiver=0730626367&amount=100&message=Åga%20buss%20" target="_blank" rel="noopener noreferrer" className={`${fredericka.className} ${styles.swishBtn1}`}>0730626367</a> <br/><br/> <b>innan 6/9</b> märk med <b>"ågabuss2025"</b></p><br/>
+          <h2 className={`${styles.hittaContentTitle1} ${fredericka.className}`}>Komma Rätt!</h2>
           <div className={styles.hittaContentMap}>
             <MapWrapper center={center} locations={locations} />
           </div>
+         
         </div>
       </main>
     </div>

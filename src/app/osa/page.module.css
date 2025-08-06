@@ -193,6 +193,7 @@
     cursor: pointer;
     align-self: center;
     transition: background-color 0.3s;
+    
   }
 
   .submitButton:hover {

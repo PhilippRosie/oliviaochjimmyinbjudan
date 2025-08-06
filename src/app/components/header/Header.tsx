@@ -59,20 +59,20 @@ export default function Header() {
           />
         </Link>
         <Link href="/osa" className={`${styles.navLink} ${fredericka.className}`}>
-          <span className={styles.navText}>OSA</span>
+          <span className={styles.navText}>Låtönskning</span>
           <Image 
             src={osaIcon} 
-            alt="OSA" 
+            alt="Låtönskning" 
             width={45} 
             height={45} 
             className={styles.navIcon}
           />
         </Link>
         <Link href="/hitta" className={`${styles.navLink} ${fredericka.className}`}>
-          <span className={styles.navText}>Hitta Rätt</span>
+          <span className={styles.navText}>Transport</span>
           <Image 
             src={hittaIcon} 
-            alt="Hitta Rätt" 
+            alt="Transport" 
             width={45} 
             height={45} 
             className={styles.navIcon}

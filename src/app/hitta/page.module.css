@@ -89,6 +89,62 @@
     margin-bottom: 32px;
   }
 
+  .hittaContentTitle1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  .hittaContentImage {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .callBtn {
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #000;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .callBtn:hover {
+    background: #f5f5f5;
+    border-color: #333;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .swishBtn1 {
+    font-size: 18px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #000;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .swishBtn1:hover {
+    background: #f5f5f5;
+    border-color: #333;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
   .hittaContentMap {
     width: 100%;
     max-width: 800px;
