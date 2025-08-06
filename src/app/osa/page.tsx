@@ -6,66 +6,21 @@ import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
 import { useState } from 'react';
-import osaline from '../assets/images/osa/osaline.png';
-import osaline1 from '../assets/images/osa/osaline-1.png';
+
 import { useRouter } from 'next/navigation';
 
 
 export default function Osa() {
   const router = useRouter();
-  const [osaSubmitting, setOsaSubmitting] = useState(false);
   const [songSubmitting, setSongSubmitting] = useState(false);
-  const [osaError, setOsaError] = useState('');
   const [songError, setSongError] = useState('');
-  const [formData, setFormData] = useState({
-    namn1: '',
-    namn2: '',
-    kommer: '',
-    specialkost: '',
-    transport: '',
-    epost: ''
-  });
 
   const [songData, setSongData] = useState({
     titel: '',
     artist: ''
   });
 
-  const handleOsaSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setOsaError('');
 
-    // Validera obligatoriska fält
-    if (!formData.kommer) {
-      setOsaError('Du måste välja om du kommer eller inte.');
-      return;
-    }
-
-    setOsaSubmitting(true);
-
-    try {
-      const response = await fetch('/api/osa', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        router.push('/tackosa');
-      } else {
-        setOsaError('Något gick fel vid skickandet av formuläret. Försök igen.');
-      }
-    } catch (error) {
-      console.error('OSA Error:', error);
-      setOsaError('Ett fel uppstod. Kontrollera din internetanslutning och försök igen.');
-    } finally {
-      setOsaSubmitting(false);
-    }
-  };
 
   const handleSongSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

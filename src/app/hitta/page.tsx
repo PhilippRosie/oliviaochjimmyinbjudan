@@ -62,7 +62,7 @@ Efter vigsel, kör bussen er vidare till Grönadal. 🥂 </p><br/>
 
 <p className={`${styles.hittaContentText} ${bitter.className}`}>ca.<b>02.30</b> avgår bussen från Grönadal och lämnar oss åter på Stortorget ca. <b>03.00</b>. </p><br/>
 
-<p className={`${styles.hittaContentText} ${bitter.className}`}>Swisha 100kr per näsa till:<br/><br/> <a href="https://www.swish.nu/pay?receiver=0730626367&amount=100&message=Åga%20buss%20" target="_blank" rel="noopener noreferrer" className={`${fredericka.className} ${styles.swishBtn1}`}>0730626367</a> <br/><br/> <b>innan 6/9</b> märk med <b>"ågabuss2025"</b></p><br/>
+<p className={`${styles.hittaContentText} ${bitter.className}`}>Swisha 100kr per näsa till:<br/><br/> <a href="https://www.swish.nu/pay?receiver=0730626367&amount=100&message=Åga%20buss%20" target="_blank" rel="noopener noreferrer" className={`${fredericka.className} ${styles.swishBtn1}`}>0730626367</a> <br/><br/> <b>innan 6/9</b> märk med <b>&quot;ågabuss2025&quot;</b></p><br/>
           <h2 className={`${styles.hittaContentTitle1} ${fredericka.className}`}>Komma Rätt!</h2>
           <div className={styles.hittaContentMap}>
             <MapWrapper center={center} locations={locations} />
