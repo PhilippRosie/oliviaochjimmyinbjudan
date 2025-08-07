@@ -14,13 +14,37 @@ interface SwishButtonProps {
 
 export default function SwishButton({ phone, amount, message, children, className }: SwishButtonProps) {
   const [showFallback, setShowFallback] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const isSwishInstalled = () => {
+    // Check if we're on iOS or Android
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const isAndroid = /Android/.test(navigator.userAgent);
+    
+    console.log('Device detection:', { isIOS, isAndroid, userAgent: navigator.userAgent });
+    
+    return isIOS || isAndroid;
+  };
 
   const handleSwishClick = () => {
-    // Create the Swish URL
-    let swishUrl = `swish://paymentrequest?phone=${phone}&message=${encodeURIComponent(message)}`;
+    setIsLoading(true);
+    
+    // Check if Swish is likely installed
+    if (!isSwishInstalled()) {
+      console.log('Not on mobile device, showing fallback immediately');
+      setIsLoading(false);
+      setShowFallback(true);
+      return;
+    }
+    
+    // Create the Swish URL with proper encoding
+    let swishUrl = `swish://paymentrequest?phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`;
     if (amount) {
       swishUrl += `&amount=${amount}`;
     }
+
+    console.log('Attempting to open Swish with URL:', swishUrl);
+    console.log('User agent:', navigator.userAgent);
 
     // Try to open Swish app
     const link = document.createElement('a');
@@ -30,39 +54,78 @@ export default function SwishButton({ phone, amount, message, children, classNam
     
     // Add a timeout to detect if Swish app opened
     const timeout = setTimeout(() => {
+      console.log('Swish app did not open, showing fallback');
+      setIsLoading(false);
       setShowFallback(true);
-    }, 2000);
+    }, 1500);
 
     // Listen for page visibility change (indicates app switch)
     const handleVisibilityChange = () => {
       if (document.hidden) {
+        console.log('Page hidden, Swish app likely opened');
         clearTimeout(timeout);
         document.removeEventListener('visibilitychange', handleVisibilityChange);
+        setIsLoading(false);
       }
     };
 
     document.addEventListener('visibilitychange', handleVisibilityChange);
     
-    link.click();
+    try {
+      link.click();
+    } catch (error) {
+      console.error('Error opening Swish:', error);
+      setIsLoading(false);
+      setShowFallback(true);
+    }
   };
 
   const handleFallbackClick = () => {
     // Copy phone number to clipboard
     navigator.clipboard.writeText(phone).then(() => {
-      alert(`Telefonnummer ${phone} har kopierats till urklipp. Öppna Swish-appen och klistra in numret.`);
+      alert(`✅ Telefonnummer ${phone} har kopierats till urklipp!\n\n📱 Instruktioner:\n1. Öppna Swish-appen\n2. Klicka på "Skicka"\n3. Klistra in telefonnumret\n4. Fyll i meddelande: ${message}${amount ? `\n5. Belopp: ${amount} kr` : ''}`);
     }).catch(() => {
-      alert(`Öppna Swish-appen och använd telefonnummer: ${phone}`);
+      alert(`📱 Öppna Swish-appen och använd:\n\n📞 Telefonnummer: ${phone}\n💬 Meddelande: ${message}${amount ? `\n💰 Belopp: ${amount} kr` : ''}\n\nOm telefonnumret inte fylls i automatiskt, klistra in det manuellt.`);
     });
   };
 
-  if (showFallback) {
+  const handleDirectLinkClick = () => {
+    // Try direct link approach
+    let swishUrl = `swish://paymentrequest?phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`;
+    if (amount) {
+      swishUrl += `&amount=${amount}`;
+    }
+    
+    window.location.href = swishUrl;
+  };
+
+  if (isLoading) {
     return (
       <button 
-        onClick={handleFallbackClick}
-        className={`${styles.swishButton} ${styles.fallbackButton} ${fredericka.className} ${className || ''}`}
+        disabled
+        className={`${styles.swishButton} ${styles.loadingButton} ${fredericka.className} ${className || ''}`}
       >
-        Kopiera telefonnummer
+        Öppnar Swish...
       </button>
+    );
+  }
+
+  if (showFallback) {
+    return (
+      <div className={styles.fallbackContainer}>
+        <button 
+          onClick={handleDirectLinkClick}
+          className={`${styles.swishButton} ${styles.directButton} ${fredericka.className} ${className || ''}`}
+        >
+          🔗 Öppna Swish direkt
+        </button>
+        <button 
+          onClick={handleFallbackClick}
+          className={`${styles.swishButton} ${styles.fallbackButton} ${fredericka.className} ${className || ''}`}
+        >
+          📋 Kopiera telefonnummer
+        </button>
+      </div>
     );
   }
 

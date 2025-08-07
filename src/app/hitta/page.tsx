@@ -67,6 +67,9 @@ Efter vigsel, kör bussen er vidare till Grönadal. 🥂 </p><br/>
   <SwishButton phone="0730626367" amount={100} message="Åga buss 2025" className={styles.swishBtn1}>
     0730626367
   </SwishButton> <br/><br/> <b>innan 6/9</b> märk med <b>&quot;ågabuss2025&quot;</b></p><br/>
+  <small style={{fontSize: '12px', color: '#666'}}>
+    Om knappen inte fungerar: <a href="swish://paymentrequest?phone=0730626367&amount=100&message=Åga%20buss%202025" target="_blank" rel="noopener noreferrer">Klicka här för att öppna Swish</a>
+  </small><br/><br/>
           <h2 className={`${styles.hittaContentTitle1} ${fredericka.className}`}>Komma Rätt!</h2>
           <div className={styles.hittaContentMap}>
             <MapWrapper center={center} locations={locations} />

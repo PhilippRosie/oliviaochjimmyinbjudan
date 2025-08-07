@@ -45,6 +45,9 @@ Därefter rör vi oss direkt 1600 meter österut till Grönadal för mingel föl
             <SwishButton phone="0730626367" message="Bröllopsgåva" className={styles.swishBtn}>
               Swisha Här!
             </SwishButton><br/><br/>
+            <small style={{fontSize: '12px', color: '#666'}}>
+              Om knappen inte fungerar: <a href="swish://paymentrequest?phone=0730626367&message=Bröllopsgåva" target="_blank" rel="noopener noreferrer">Klicka här för att öppna Swish</a>
+            </small><br/><br/>
           </p>
         </section>
         <section className={styles.informationSection1}>
