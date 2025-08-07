@@ -6,6 +6,7 @@ import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.pn
 import Ludwig from '../assets/images/map/ludwig.jpg';
 import type { LatLngTuple } from 'leaflet';
 import MapWrapper from '../components/maps/MapWrapper';
+import SwishButton from '../components/SwishButton';
 
 const center: LatLngTuple = [55.9659, 12.8393];
 const locations = [
@@ -62,7 +63,10 @@ Efter vigsel, kör bussen er vidare till Grönadal. 🥂 </p><br/>
 
 <p className={`${styles.hittaContentText} ${bitter.className}`}>ca.<b>02.30</b> avgår bussen från Grönadal och lämnar oss åter på Stortorget ca. <b>03.00</b>. </p><br/>
 
-<p className={`${styles.hittaContentText} ${bitter.className}`}>Swisha 100kr per näsa till:<br/><br/> <a href="swish://paymentrequest?phone=0730626367&amount=100&message=Åga%20buss%20" target="_blank" rel="noopener noreferrer" className={`${fredericka.className} ${styles.swishBtn1}`}>0730626367</a> <br/><br/> <b>innan 6/9</b> märk med <b>&quot;ågabuss2025&quot;</b></p><br/>
+<p className={`${styles.hittaContentText} ${bitter.className}`}>Swisha 100kr per näsa till:<br/><br/> 
+  <SwishButton phone="0730626367" amount={100} message="Åga buss 2025" className={styles.swishBtn1}>
+    0730626367
+  </SwishButton> <br/><br/> <b>innan 6/9</b> märk med <b>&quot;ågabuss2025&quot;</b></p><br/>
           <h2 className={`${styles.hittaContentTitle1} ${fredericka.className}`}>Komma Rätt!</h2>
           <div className={styles.hittaContentMap}>
             <MapWrapper center={center} locations={locations} />
