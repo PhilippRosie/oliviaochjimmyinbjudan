@@ -42,17 +42,14 @@ Därefter rör vi oss direkt 1600 meter österut till Grönadal för mingel föl
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
             <b>Presenter:</b> Önskar vi oss inga, däremot gärna ett bidrag till vår framtida bröllopsresa. <br /><br />
             Vi vet inte riktigt vart vi ska än – men vi lovar att göra något minnesvärt (och kanske soligt) <br/><br/>
-            <SwishButton phone="0730626367" message="Bröllopsgåva" className={styles.swishBtn}>
-              Swisha Här!
-            </SwishButton><br/><br/>
-            <small style={{fontSize: '12px', color: '#666'}}>
-              Om knappen inte fungerar: <a href={`swish://paymentrequest?phone=${encodeURIComponent('0730626367')}&message=${encodeURIComponent('Bröllopsgåva')}`} target="_blank" rel="noopener noreferrer">Klicka här för att öppna Swish</a> eller <a href={`swish://paymentrequest?phone=0730626367&message=Bröllopsgåva`} target="_blank" rel="noopener noreferrer">alternativ länk</a>
-            </small><br/><br/>
-            <p style={{fontSize: '14px', color: '#333', marginTop: '10px'}}>
-              📞 <strong>Telefonnummer för Swish:</strong> 0730626367<br/>
-              💬 <strong>Meddelande:</strong> Bröllopsgåva
-            </p><br/><br/>
           </p>
+          <SwishButton phone="0730626367" message="Bröllopsgåva" className={styles.swishBtn}>
+            Swisha Här!
+          </SwishButton><br/><br/>
+          <p style={{fontSize: '14px', color: '#333', marginTop: '10px'}} className={bitter.className}>
+            📞 <strong>Telefonnummer för Swish:</strong> 0730626367<br/>
+            💬 <strong>Meddelande:</strong> Bröllopsgåva
+          </p><br/><br/>
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
