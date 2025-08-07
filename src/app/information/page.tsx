@@ -41,7 +41,7 @@ Därefter rör vi oss direkt 1600 meter österut till Grönadal för mingel föl
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
             <b>Presenter:</b> Önskar vi oss inga, däremot gärna ett bidrag till vår framtida bröllopsresa. <br /><br />
             Vi vet inte riktigt vart vi ska än – men vi lovar att göra något minnesvärt (och kanske soligt) <br/><br/>
-            <a href="https://www.swish.nu/pay?receiver=0730626367&message=Tack%20så%20fruktansvärt%20mycket" target="_blank" rel="noopener noreferrer" className={`${fredericka.className} ${styles.swishBtn}`}>Swisha Här!</a><br/><br/>
+            <a href="swish://paymentrequest?phone=0730626367&&message=Bröllopsgåva" target="_blank" rel="noopener noreferrer" className={`${fredericka.className} ${styles.swishBtn}`}>Swisha Här!</a><br/><br/>
           </p>
         </section>
         <section className={styles.informationSection1}>
