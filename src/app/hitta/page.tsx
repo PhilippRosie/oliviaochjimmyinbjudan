@@ -42,7 +42,7 @@ export default function Hitta() {
           <p className={`${styles.hittaContentText} ${bitter.className}`}>
             Informationen här gäller er som önskat hjälp med transport: (har ni som inte önskat hjälp ändrat er? Hör av er snarast! Så går det att lösa)
             <br/>
-            För enbart adresser! Kolla längst ner på sidan (länk?)
+            För enbart adresser! Kolla längst ner på sidan.
             <br/>
             <br/>
 <b>Klockan 13.30</b> är bussen på plats och senast <b>13.40</b> avgår den från <b>Stortorget</b> (Magnus Stenbock-statyn)
