@@ -52,7 +52,7 @@ om exakt :
           <p className={`${styles.osaReminderText} ${fredericka.className}`}>
             Glöm inte att <a href="/osa" className={styles.underline}>OSA</a>!
           </p>*/}
-          <Image src={Camera} alt="Camera" width={200} height={120} className={styles.camera} />
+          <Image src={Camera} alt="Camera" width={210} height={130} className={styles.camera} />
           <a href="https://photos.app.goo.gl/49L7yjeQ8Myno1XQ9" target="_blank" rel="noopener noreferrer">
             <button className={`${styles.osaReminderBtn} ${fredericka.className}`}>Se och dela med dig av bilder från dagen</button>
           </a>
