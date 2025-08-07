@@ -4,6 +4,7 @@ import Image from 'next/image';
 import borderTop from '../assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from '../assets/images/inbjudan/header-leaf-border-bottom.png';
 import Körschema from '../assets/images/information/korschema.jpg';
+import SwishButton from '../components/SwishButton';
 
 export default function Information() {
   return (
@@ -41,8 +42,14 @@ Därefter rör vi oss direkt 1600 meter österut till Grönadal för mingel föl
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
             <b>Presenter:</b> Önskar vi oss inga, däremot gärna ett bidrag till vår framtida bröllopsresa. <br /><br />
             Vi vet inte riktigt vart vi ska än – men vi lovar att göra något minnesvärt (och kanske soligt) <br/><br/>
-            <a href="https://www.swish.nu/pay?receiver=0730626367&message=Tack%20så%20fruktansvärt%20mycket" target="_blank" rel="noopener noreferrer" className={`${fredericka.className} ${styles.swishBtn}`}>Swisha Här!</a><br/><br/>
           </p>
+          <SwishButton phone="0730626367" message="Bröllopsgåva" className={styles.swishBtn}>
+            Swisha Här!
+          </SwishButton><br/><br/>
+          <p style={{fontSize: '14px', color: '#333', marginTop: '10px'}} className={bitter.className}>
+            📞 <strong>Telefonnummer för Swish:</strong> 0730626367<br/>
+            💬 <strong>Meddelande:</strong> Bröllopsgåva
+          </p><br/><br/>
         </section>
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>

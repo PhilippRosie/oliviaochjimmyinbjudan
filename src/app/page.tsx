@@ -6,6 +6,7 @@ import { fredericka, bitter } from './fonts';
 import Image from 'next/image';
 import borderTop from './assets/images/inbjudan/header-leaf-border-top.png';
 import borderBottom from './assets/images/inbjudan/header-leaf-border-bottom.png';
+import Camera from './assets/images/inbjudan/delade-foton.jpg';
 import Countdown from './components/Countdown/Countdown';
 import IntroPage from './components/intro/page';
 
@@ -51,6 +52,7 @@ om exakt :
           <p className={`${styles.osaReminderText} ${fredericka.className}`}>
             Glöm inte att <a href="/osa" className={styles.underline}>OSA</a>!
           </p>*/}
+          <Image src={Camera} alt="Camera" width={210} height={130} className={styles.camera} />
           <a href="https://photos.app.goo.gl/49L7yjeQ8Myno1XQ9" target="_blank" rel="noopener noreferrer">
             <button className={`${styles.osaReminderBtn} ${fredericka.className}`}>Se och dela med dig av bilder från dagen</button>
           </a>

@@ -10,8 +10,8 @@ import { fredericka } from '../../fonts';
 import inbjudanIcon from '../../assets/images/header/inbjudan-icon.png';
 import infoIcon from '../../assets/images/header/info-icon.png';
 import talIcon from '../../assets/images/header/tal-icon.png';
-import osaIcon from '../../assets/images/header/osa-icon.png';
-import hittaIcon from '../../assets/images/header/hitta-icon.png';
+import osaIcon from '../../assets/images/header/osa-icon.jpg';
+import hittaIcon from '../../assets/images/header/hitta-icon.jpg';
 
 export default function Header() {
   
