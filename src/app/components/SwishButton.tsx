@@ -83,20 +83,29 @@ export default function SwishButton({ phone, amount, message, children, classNam
   const handleFallbackClick = () => {
     // Copy phone number to clipboard
     navigator.clipboard.writeText(phone).then(() => {
-      alert(`✅ Telefonnummer ${phone} har kopierats till urklipp!\n\n📱 Instruktioner:\n1. Öppna Swish-appen\n2. Klicka på "Skicka"\n3. Klistra in telefonnumret\n4. Fyll i meddelande: ${message}${amount ? `\n5. Belopp: ${amount} kr` : ''}`);
+      alert(`✅ Telefonnummer ${phone} har kopierats till urklipp!\n\n📱 Instruktioner:\n1. Öppna Swish-appen\n2. Klicka på "Skicka"\n3. Klistra in telefonnumret (${phone})\n4. Fyll i meddelande: ${message}${amount ? `\n5. Belopp: ${amount} kr` : ''}\n\n💡 Tips: Om numret inte fylls i automatiskt, klistra in det manuellt från urklipp.`);
     }).catch(() => {
-      alert(`📱 Öppna Swish-appen och använd:\n\n📞 Telefonnummer: ${phone}\n💬 Meddelande: ${message}${amount ? `\n💰 Belopp: ${amount} kr` : ''}\n\nOm telefonnumret inte fylls i automatiskt, klistra in det manuellt.`);
+      alert(`📱 Öppna Swish-appen och använd:\n\n📞 Telefonnummer: ${phone}\n💬 Meddelande: ${message}${amount ? `\n💰 Belopp: ${amount} kr` : ''}\n\n⚠️ Om telefonnumret inte fylls i automatiskt:\n1. Klicka på telefonnummer-fältet\n2. Klistra in: ${phone}\n3. Fyll i resten av informationen manuellt.`);
     });
   };
 
   const handleDirectLinkClick = () => {
-    // Try direct link approach
+    // Try direct link approach with better URL encoding
     let swishUrl = `swish://paymentrequest?phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`;
     if (amount) {
       swishUrl += `&amount=${amount}`;
     }
     
-    window.location.href = swishUrl;
+    console.log('Trying direct link approach with URL:', swishUrl);
+    
+    // Try window.location.href approach
+    try {
+      window.location.href = swishUrl;
+    } catch (error) {
+      console.error('Direct link failed:', error);
+      // Fallback to clipboard
+      handleFallbackClick();
+    }
   };
 
   if (isLoading) {

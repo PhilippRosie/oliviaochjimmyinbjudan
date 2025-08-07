@@ -68,8 +68,13 @@ Efter vigsel, kör bussen er vidare till Grönadal. 🥂 </p><br/>
     0730626367
   </SwishButton> <br/><br/> <b>innan 6/9</b> märk med <b>&quot;ågabuss2025&quot;</b></p><br/>
   <small style={{fontSize: '12px', color: '#666'}}>
-    Om knappen inte fungerar: <a href="swish://paymentrequest?phone=0730626367&amount=100&message=Åga%20buss%202025" target="_blank" rel="noopener noreferrer">Klicka här för att öppna Swish</a>
+    Om knappen inte fungerar: <a href={`swish://paymentrequest?phone=${encodeURIComponent('0730626367')}&amount=100&message=${encodeURIComponent('Åga buss 2025')}`} target="_blank" rel="noopener noreferrer">Klicka här för att öppna Swish</a> eller <a href={`swish://paymentrequest?phone=0730626367&amount=100&message=Åga%20buss%202025`} target="_blank" rel="noopener noreferrer">alternativ länk</a>
   </small><br/><br/>
+  <p style={{fontSize: '14px', color: '#333', marginTop: '10px'}}>
+    📞 <strong>Telefonnummer för Swish:</strong> 0730626367<br/>
+    💰 <strong>Belopp:</strong> 100 kr<br/>
+    💬 <strong>Meddelande:</strong> Åga buss 2025
+  </p><br/><br/>
           <h2 className={`${styles.hittaContentTitle1} ${fredericka.className}`}>Komma Rätt!</h2>
           <div className={styles.hittaContentMap}>
             <MapWrapper center={center} locations={locations} />
