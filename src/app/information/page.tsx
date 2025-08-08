@@ -77,7 +77,7 @@ Kom i något du känner dig &quot;uppklädd&quot; & fin i! (Vi undanber dock bl�
         <section className={styles.informationSection1}>
           <p className={`${styles.informationSectionText} ${bitter.className}`}>
             <b>Boende:</b> För er som reser långt ifrån och vill boka hotell, rekommenderar vi The Vault hotell (där vi själva kommer att bo). <br/>
-            <br/> (<a href="https://boka.thevaulthotel.se" className={styles.underline}>boka.thevaulthotel.se</a> och skriv in rabattkoden <b>'K-gränd'</b> för 20% rabatt.)
+            <br/> (<a href="https://boka.thevaulthotel.se" className={styles.underline}>boka.thevaulthotel.se</a> och skriv in rabattkoden <b>&apos;K-gränd&apos;</b> för 20% rabatt.)
           </p>
         </section>
       </div>
